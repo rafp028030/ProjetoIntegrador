@@ -21,7 +21,56 @@
     <main>
 
         <section id="sobre">
-            
+            <h2>Sobre Mim</h2>
+            <p>Ingressei pela primeira vez no IFPI em 2024 no curso de graduação em Bacharelado em Administração campus São João do Piauí, onde participei de cursos de capacitacção em Atendente de Turismo, Fruticultura, Caprinovinocultura e Pisicultura. Em 2025 eu ingressei no curso de graduação em Licenciatura em Matemática no campus Ministro Petrônio Portella da UFPI. Em 2026 eu ingressei no curso no curso Técnico em Análise e Desenvolvimento de Sistemas.</p>
+            <img src="assets/foto-perfil.jpg" alt="Foto de perfil de Rafael Pereira da Silva">
+        </section>
+
+        <section id="habilidades">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>HTML5 Semânticos</li>
+                    <li>Estilização CSS3 (Flexbox & Grid)</li>
+                    <li>Lógica com JavaScript</li>
+                    <li>Controlo de Versão com Git & GitHub</li>
+                </ul>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+
+            <article>
+                <h3>Projeto Integrador - SPA</h3>
+                <p>Aplicação real desenvolvida ao longo do curso de Front-End no IFPI, aplicando conceitos de arquitetura semântica e responsividade.</p>
+            </article>
+
+            <article>
+                <h3>E-commerce Automatizado</h3>
+                <p>Simulação de uma plataforma de mercado digital focada na otimização de visualização de especificações técnicas de hardware.</p>
+            </article>
+        </section>
+
+        <section id="contato">
+            <h2>Contatos</h2>
+            <form action="#" method="POST" id="form-contato"></form>
+                <label biographies="nome">Nome:</label>
+                <Input type="text" id="nome" name="nome" required placeholder="Rafael Pereira da Silva"></Input>
+
+                <label for="email">E-mail:</label>
+                <Input type="email" id="email" name="email" required placeholder="rafp028030@gmail.com"></Input>
+
+                <label for="assunto">Tipo de Assunto:</label>
+                <select name="assunto" id="assunto" required>
+                    <option value="">Selecione uma opção...</option>
+                    <option value="estagio">Oportunidade de Estágio</option>
+                    <option value="freelance">Projeto Feelance</option>
+                    <option value="duvida">Dúvidas Gerais</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" rows="5" required placeholder="Olá! Digite aqui os detalhes de sua proposta ou dúvidas..."></textarea>
+
+                <button type="submit"></button>
         </section>
     </main>
 </body>
