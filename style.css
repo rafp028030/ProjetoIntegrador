@@ -1,0 +1,21 @@
+header    {
+    font-family: Arial, sans-sherif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+ 
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.grid-cartões {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
