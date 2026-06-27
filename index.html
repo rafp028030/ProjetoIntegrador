@@ -1,86 +1,139 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portofólio Profissional</title>
+    <title>Meu Portfólio Profissional</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Rafael Pereira da Silva</h1> 
-        <nav class="navbar ">
+
+    <header class="cabecalho">
+        <h1>Rafael Pereira da Silva</h1>
+
+        <nav>
             <ul>
                 <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#habilidades">habilidades</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
 
         <section id="sobre">
             <h2>Sobre Mim</h2>
-            <p >Ingressei pela primeira vez no IFPI em 2024 no curso de graduação em Bacharelado em Administração campus São João do Piauí, onde participei de cursos de capacitacção em Atendente de Turismo, Fruticultura, Caprinovinocultura e Pisicultura. Em 2025 eu ingressei no curso de graduação em Licenciatura em Matemática no campus Ministro Petrônio Portella da UFPI. Em 2026 eu ingressei no curso no curso Técnico em Análise e Desenvolvimento de Sistemas.</p>
-           
+
+            <p>
+                Ingressei no Instituto Federal do Piauí (IFPI) em 2024, no curso de
+                Bacharelado em Administração, Campus São João do Piauí, onde participei
+                de cursos de capacitação em Atendente de Turismo, Fruticultura,
+                Caprinovinocultura e Piscicultura.
+            </p>
+
+            <p>
+                Em 2025, ingressei na Universidade Federal do Piauí (UFPI), Campus
+                Ministro Petrônio Portella, no curso de Licenciatura em Matemática.
+            </p>
+
+            <p>
+                Em 2026, iniciei o curso Técnico em Análise e Desenvolvimento de
+                Sistemas no IFPI, buscando desenvolver competências voltadas ao
+                desenvolvimento de software e tecnologias web.
+            </p>
+
             <img src="assets/foto-perfil.jpg" alt="Foto de perfil de Rafael Pereira da Silva">
         </section>
 
         <section id="habilidades">
-                <h2>Habilidades</h2>
-                <ul>
-                    <li>HTML5 Semânticos</li>
-                    <li>Estilização CSS3 (Flexbox & Grid)</li>
-                    <li>Lógica com JavaScript</li>
-                    <li>Controlo de Versão com Git & GitHub</li>
-                </ul>
+            <h2>Habilidades</h2>
+
+            <ul>
+                <li>HTML5 Semântico</li>
+                <li>CSS3 (Flexbox e Grid)</li>
+                <li>Lógica de Programação com JavaScript</li>
+                <li>Controle de Versão com Git e GitHub</li>
+            </ul>
         </section>
 
         <section id="projetos">
             <h2>Projetos</h2>
 
             <article>
-                <h3>Projeto Integrador - SPA</h3>
-                <p>Aplicação real desenvolvida ao longo do curso de Front-End no IFPI, aplicando conceitos de arquitetura semântica e responsividade.</p>
-            </article>
+                <h3>Projeto Integrador – Portfólio Pessoal</h3>
 
+                <p>
+                    Desenvolvimento de um portfólio profissional utilizando HTML5,
+                    CSS3, Flexbox, Media Queries e JavaScript, com foco na apresentação
+                    da minha formação acadêmica, habilidades técnicas e informações
+                    para contato.
+                </p>
+            </article>
         </section>
 
         <section id="contato">
-            <h2>Contatos</h2>
-            <form action="#" method="POST" id="form-contato">
-                <label biographies="nome">Nome:</label>
-                <Input type="text" id="nome" name="nome" required placeholder="Rafael Pereira da Silva"></Input>
+            <h2>Contato</h2>
+
+            <form action="#" method="post" id="form-contato">
+
+                <label for="nome">Nome:</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    required
+                    placeholder="Rafael Pereira da Silva">
 
                 <label for="email">E-mail:</label>
-                <Input type="email" id="email" name="email" required placeholder="rafp028030@gmail.com"></Input>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="rafp028030@gmail.com">
 
                 <label for="assunto">Tipo de Assunto:</label>
-                <select name="assunto" id="assunto" required>
+
+                <select id="assunto" name="assunto" required>
                     <option value="">Selecione uma opção...</option>
                     <option value="estagio">Oportunidade de Estágio</option>
-                    <option value="freelance">Projeto Feelance</option>
+                    <option value="freelance">Projeto Freelance</option>
                     <option value="duvida">Dúvidas Gerais</option>
                 </select>
 
                 <label for="mensagem">Mensagem:</label>
-                <textarea name="mensagem" id="mensagem" rows="5" required placeholder="Olá! Digite aqui os detalhes de sua proposta ou dúvidas..."></textarea>
+
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    required
+                    placeholder="Olá! Digite aqui sua mensagem..."></textarea>
 
                 <button type="submit">Enviar Mensagem</button>
+
             </form>
         </section>
+
     </main>
 
     <footer>
+
         <p>Desenvolvido por Rafael Pereira da Silva</p>
+
         <div class="redes-sociais">
-            <a href="https://github.com" target="_blank">GitHub</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
         </div>
+
     </footer>
 
     <script src="js/script.js"></script>
+
 </body>
+
 </html>
