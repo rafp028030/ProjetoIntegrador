@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio Profissional</title>
+    <title>Portfólio | Rafael Pereira da Silva</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
@@ -28,25 +28,23 @@
         <section id="sobre">
             <h2>Sobre Mim</h2>
 
+            <img src="assets/foto-perfil.jpg" alt="Foto de Rafael Pereira da Silva">
+
             <p>
-                Ingressei no Instituto Federal do Piauí (IFPI) em 2024, no curso de
-                Bacharelado em Administração, Campus São João do Piauí, onde participei
-                de cursos de capacitação em Atendente de Turismo, Fruticultura,
-                Caprinovinocultura e Piscicultura.
+                Ingressei no Instituto Federal do Piauí (IFPI) em 2024, no curso de Bacharelado em Administração,
+                Campus São João do Piauí, onde participei de cursos de capacitação em Atendente de Turismo,
+                Fruticultura, Caprinovinocultura e Piscicultura.
             </p>
 
             <p>
-                Em 2025, ingressei na Universidade Federal do Piauí (UFPI), Campus
-                Ministro Petrônio Portella, no curso de Licenciatura em Matemática.
+                Em 2025, ingressei na Universidade Federal do Piauí (UFPI), Campus Ministro Petrônio Portella,
+                no curso de Licenciatura em Matemática.
             </p>
 
             <p>
-                Em 2026, iniciei o curso Técnico em Análise e Desenvolvimento de
-                Sistemas no IFPI, buscando desenvolver competências voltadas ao
-                desenvolvimento de software e tecnologias web.
+                Em 2026, iniciei o curso Técnico em Análise e Desenvolvimento de Sistemas no IFPI, buscando
+                desenvolver competências voltadas ao desenvolvimento de software e tecnologias web.
             </p>
-
-            <img src="assets/foto-perfil.jpg" alt="Foto de perfil de Rafael Pereira da Silva">
         </section>
 
         <section id="habilidades">
@@ -63,16 +61,21 @@
         <section id="projetos">
             <h2>Projetos</h2>
 
-            <article>
-                <h3>Projeto Integrador – Portfólio Pessoal</h3>
+            <div class="projetos-container">
 
-                <p>
-                    Desenvolvimento de um portfólio profissional utilizando HTML5,
-                    CSS3, Flexbox, Media Queries e JavaScript, com foco na apresentação
-                    da minha formação acadêmica, habilidades técnicas e informações
-                    para contato.
-                </p>
-            </article>
+                <article class="card-projeto">
+                    <h3>Projeto Integrador – Portfólio Pessoal</h3>
+
+                    <p>
+                        Desenvolvimento de um portfólio profissional utilizando HTML5, CSS3,
+                        Flexbox, Media Queries e JavaScript, com foco na apresentação da minha
+                        formação acadêmica, habilidades técnicas e informações para contato.
+                    </p>
+
+                    <a href="#">Ver Projeto</a>
+                </article>
+
+            </div>
         </section>
 
         <section id="contato">
@@ -80,39 +83,37 @@
 
             <form action="#" method="post" id="form-contato">
 
-                <label for="nome">Nome:</label>
-                <input
-                    type="text"
-                    id="nome"
-                    name="nome"
-                    required
-                    placeholder="Rafael Pereira da Silva">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Rafael Pereira da Silva" required>
+                </div>
 
-                <label for="email">E-mail:</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    placeholder="rafp028030@gmail.com">
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="rafp028030@gmail.com" required>
+                </div>
 
-                <label for="assunto">Tipo de Assunto:</label>
+                <div class="campo">
+                    <label for="assunto">Tipo de Assunto:</label>
 
-                <select id="assunto" name="assunto" required>
-                    <option value="">Selecione uma opção...</option>
-                    <option value="estagio">Oportunidade de Estágio</option>
-                    <option value="freelance">Projeto Freelance</option>
-                    <option value="duvida">Dúvidas Gerais</option>
-                </select>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione uma opção...</option>
+                        <option value="estagio">Oportunidade de Estágio</option>
+                        <option value="freelance">Projeto Freelance</option>
+                        <option value="duvida">Dúvidas Gerais</option>
+                    </select>
+                </div>
 
-                <label for="mensagem">Mensagem:</label>
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
 
-                <textarea
-                    id="mensagem"
-                    name="mensagem"
-                    rows="5"
-                    required
-                    placeholder="Olá! Digite aqui sua mensagem..."></textarea>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="5"
+                        placeholder="Olá! Digite aqui sua mensagem..."
+                        required></textarea>
+                </div>
 
                 <button type="submit">Enviar Mensagem</button>
 
@@ -122,14 +123,12 @@
     </main>
 
     <footer>
-
-        <p>Desenvolvido por Rafael Pereira da Silva</p>
+        <p>2026 - Desenvolvido por Rafael Pereira da Silva</p>
 
         <div class="redes-sociais">
             <a href="https://github.com/" target="_blank">GitHub</a>
             <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
         </div>
-
     </footer>
 
     <script src="js/script.js"></script>
