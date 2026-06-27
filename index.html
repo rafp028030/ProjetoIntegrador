@@ -13,12 +13,17 @@
     <header class="cabecalho">
         <h1>Rafael Pereira da Silva</h1>
 
-        <nav>
+        <nav class="menu">
             <ul>
                 <li><a href="#sobre">Sobre Mim</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li>
+                    <button type="button" id="btn-tema">
+                        Modo Escuro
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -28,22 +33,15 @@
         <section id="sobre">
             <h2>Sobre Mim</h2>
 
-            <img src="assets/foto-perfil.jpg" alt="Foto de Rafael Pereira da Silva">
+            <img src="assets/foto-perfil.jpg"
+                 alt="Foto de Rafael Pereira da Silva">
 
             <p>
-                Ingressei no Instituto Federal do Piauí (IFPI) em 2024, no curso de Bacharelado em Administração,
-                Campus São João do Piauí, onde participei de cursos de capacitação em Atendente de Turismo,
-                Fruticultura, Caprinovinocultura e Piscicultura.
-            </p>
-
-            <p>
-                Em 2025, ingressei na Universidade Federal do Piauí (UFPI), Campus Ministro Petrônio Portella,
-                no curso de Licenciatura em Matemática.
-            </p>
-
-            <p>
-                Em 2026, iniciei o curso Técnico em Análise e Desenvolvimento de Sistemas no IFPI, buscando
-                desenvolver competências voltadas ao desenvolvimento de software e tecnologias web.
+                Sou estudante de Licenciatura em Matemática pela Universidade Federal do
+                Piauí (UFPI) e estudante do curso Técnico em Análise e Desenvolvimento de
+                Sistemas no Instituto Federal do Piauí (IFPI). Busco desenvolver
+                habilidades em programação e desenvolvimento web por meio de projetos
+                práticos e aprendizagem contínua.
             </p>
         </section>
 
@@ -53,26 +51,28 @@
             <ul>
                 <li>HTML5 Semântico</li>
                 <li>CSS3 (Flexbox e Grid)</li>
-                <li>Lógica de Programação com JavaScript</li>
-                <li>Controle de Versão com Git e GitHub</li>
+                <li>JavaScript</li>
+                <li>Git e GitHub</li>
             </ul>
         </section>
 
         <section id="projetos">
-            <h2>Projetos</h2>
+            <h2>Meus Projetos</h2>
 
             <div class="projetos-container">
 
                 <article class="card-projeto">
-                    <h3>Projeto Integrador – Portfólio Pessoal</h3>
+
+                    <h3>Projeto Integrador - Portfólio Pessoal</h3>
 
                     <p>
-                        Desenvolvimento de um portfólio profissional utilizando HTML5, CSS3,
-                        Flexbox, Media Queries e JavaScript, com foco na apresentação da minha
-                        formação acadêmica, habilidades técnicas e informações para contato.
+                        Desenvolvimento de um portfólio profissional utilizando HTML5,
+                        CSS3, Flexbox e JavaScript, com layout responsivo e boas práticas
+                        de desenvolvimento web.
                     </p>
 
                     <a href="#">Ver Projeto</a>
+
                 </article>
 
             </div>
@@ -81,41 +81,29 @@
         <section id="contato">
             <h2>Contato</h2>
 
-            <form action="#" method="post" id="form-contato">
+            <form action="#" method="post">
 
                 <div class="campo">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Rafael Pereira da Silva" required>
+                    <input type="text" id="nome" name="nome" required>
                 </div>
 
                 <div class="campo">
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="rafp028030@gmail.com" required>
+                    <input type="email" id="email" name="email" required>
                 </div>
 
                 <div class="campo">
-                    <label for="assunto">Tipo de Assunto:</label>
-
-                    <select id="assunto" name="assunto" required>
-                        <option value="">Selecione uma opção...</option>
-                        <option value="estagio">Oportunidade de Estágio</option>
-                        <option value="freelance">Projeto Freelance</option>
-                        <option value="duvida">Dúvidas Gerais</option>
-                    </select>
+                    <label for="msg">Mensagem:</label>
+                    <textarea id="msg"
+                              name="msg"
+                              rows="5"
+                              required></textarea>
                 </div>
 
-                <div class="campo">
-                    <label for="mensagem">Mensagem:</label>
-
-                    <textarea
-                        id="mensagem"
-                        name="mensagem"
-                        rows="5"
-                        placeholder="Olá! Digite aqui sua mensagem..."
-                        required></textarea>
-                </div>
-
-                <button type="submit">Enviar Mensagem</button>
+                <button type="submit">
+                    Enviar Mensagem
+                </button>
 
             </form>
         </section>
@@ -123,12 +111,14 @@
     </main>
 
     <footer>
+
         <p>2026 - Desenvolvido por Rafael Pereira da Silva</p>
 
         <div class="redes-sociais">
             <a href="https://github.com/" target="_blank">GitHub</a>
             <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
         </div>
+
     </footer>
 
     <script src="js/script.js"></script>
